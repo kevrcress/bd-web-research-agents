@@ -56,9 +56,9 @@ Zone names are found in the Bright Data dashboard under **Proxies & Scraping**.
 
 ```bash
 python3 -m bright_research_agent.audit_agent \
-  --keyword 'Lake Erie fishing charters' \
-  --business 'Walleye fishing charter out of Lorain, Ohio, $1k/month Google Ads budget' \
-  --client-url 'https://justwalleye.com'
+  --keyword 'emergency plumber Austin TX' \
+  --business 'Family-owned plumbing company serving Austin, TX, $1k/month Google Ads budget' \
+  --client-url 'https://example-plumbing.com'
 ```
 
 The report is saved to `output/audit_<keyword>_<timestamp>.html`. Open it in any browser.
@@ -85,9 +85,9 @@ The three CLI arguments are combined internally into a research prompt — the u
 
 | Argument | Required | Description |
 |---|---|---|
-| `--keyword` | Yes | The Google search term to analyze (e.g. `"Lake Erie fishing charters"`). Used as the SERP query and as the primary competitive lens for the audit. |
-| `--business` | Yes | A short plain-English description of the client's business, including any relevant context like budget or location (e.g. `"Walleye fishing charter out of Lorain, Ohio, $1k/month Google Ads budget"`). Passed to the agent to frame recommendations relative to the client's situation. |
-| `--client-url` | Yes | The client's website URL (e.g. `"https://justwalleye.com"`). Fetched directly and separately from the SERP results, labeled `CLIENT SITE` in the evidence bundle. The client domain is also filtered out of SERP results so it doesn't appear as its own competitor. |
+| `--keyword` | Yes | The Google search term to analyze (e.g. `"emergency plumber Austin TX"`). Used as the SERP query and as the primary competitive lens for the audit. |
+| `--business` | Yes | A short plain-English description of the client's business, including any relevant context like budget or location (e.g. `"Family-owned plumbing company serving Austin, TX, $1k/month Google Ads budget"`). Passed to the agent to frame recommendations relative to the client's situation. |
+| `--client-url` | Yes | The client's website URL (e.g. `"https://example-plumbing.com"`). Fetched directly and separately from the SERP results, labeled `CLIENT SITE` in the evidence bundle. The client domain is also filtered out of SERP results so it doesn't appear as its own competitor. |
 
 ### How the evidence bundle is constructed
 
