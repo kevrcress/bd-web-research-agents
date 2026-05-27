@@ -1,4 +1,4 @@
-# Google Ads Competitive Audit Agent
+# Small Business Google Ads / SEO / GEO Audit Agent
 
 An agentic research tool that helps small local businesses understand why competitors are outperforming them on Google Ads — and what to do about it.
 
