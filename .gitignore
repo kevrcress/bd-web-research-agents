@@ -3,3 +3,9 @@
 __pycache__/
 *.py[cod]
 *.egg-info/
+
+# Generated audit reports (contents ignored via output/.gitignore)
+audit_output.txt
+
+# OS
+.DS_Store
